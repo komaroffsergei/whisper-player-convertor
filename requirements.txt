@@ -1,0 +1,6 @@
+torch>=2.0.0
+torchaudio>=2.0.0
+transformers>=4.38.0
+huggingface_hub[hf_xet]
+numpy
+soundfile
