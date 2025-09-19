@@ -11,10 +11,10 @@ import whisperx
 
 warnings.filterwarnings("ignore")
 
-MODEL_NAME = "small"
-LANGUAGE = "ru"
-COMPUTE_TYPE = "int8"
-MODEL_DIR = "./models"
+MODEL_NAME = os.environ.get("MODEL_NAME", "large-v3")
+LANGUAGE = os.environ.get("LANGUAGE", "ru")
+COMPUTE_TYPE = os.environ.get("COMPUTE_TYPE", "int8")
+MODEL_DIR = os.environ.get("MODEL_DIR", "./models")
 os.makedirs(MODEL_DIR, exist_ok=True)
 
 
